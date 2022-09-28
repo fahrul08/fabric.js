@@ -26406,8 +26406,8 @@ fabric.Image.filters.BaseFilter.fromObject = function(object, callback) {
         }
         line = this._textLines[i];
         lineLeftOffset = this._getLineLeftOffset(i);
-        boxWidth = 0;
-        boxStart = 0;
+        boxWidth = 40;
+        boxStart = -20;
         lastColor = this.getValueOfPropertyAt(i, 0, 'textBackgroundColor');
         for (var j = 0, jlen = line.length; j < jlen; j++) {
           charBox = this.__charBounds[i][j];
